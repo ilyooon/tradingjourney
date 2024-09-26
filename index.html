@@ -2,48 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Personal Website</title>
+    <title>My Crypto Journey</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Your CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="bg-dark text-white text-center py-3">
         <h1>Welcome to My Crypto Journey</h1>
         <nav>
-            <ul>
-                <li><a href="#crypto">My Crypto Holdings</a></li>
-                <li><a href="#exchange">My Exchange</a></li>
-                <li><a href="#discord">Join My Discord</a></li>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="#crypto">My Crypto Holdings</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#exchange">My Exchange</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#discord">Join My Discord</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="crypto">
+    <section id="crypto" class="container my-5">
         <h2>Current Cryptocurrency Holdings</h2>
         <p>What cryptocurrencies am I currently holding?</p>
-        <!-- Example list -->
-        <ul>
-            <li>Bitcoin ($BTC)</li>
-            <li>Ethereum ($ETH)</li>
-            <li>Pendle ($PENDLE)</li>
+        <ul id="holdings-list">
+            <!-- Holdings will be inserted here by JavaScript -->
         </ul>
     </section>
 
-    <section id="exchange">
+    <section id="exchange" class="container my-5">
         <h2>My Exchange</h2>
         <p>I use Binance as my primary crypto exchange.</p>
-        <p>You can join Binance here.</p>
-        <a href="https://www.binance.com/activity/referral-entry/CPA?ref=CPA_00B8TQ6KDL" target="_blank">Join Binance with my referral link</a>
+        <p>You can join Binance here:</p>
+        <a href="https://www.binance.com/activity/referral-entry/CPA?ref=CPA_00B8TQ6KDL" target="_blank" class="btn btn-primary">Join Binance with my referral link</a>
     </section>
 
-    <section id="discord">
+    <section id="discord" class="container my-5">
         <h2>Join My Discord Server</h2>
         <p>Stay connected and join discussions on my Discord server.</p>
-        <a href="https://discord.gg/yQVrE3Zk" target="_blank">Join Discord</a>
+        <a href="https://discord.gg/yQVrE3Zk" target="_blank" class="btn btn-success">Join Discord</a>
     </section>
 
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 mimimikhael. All rights reserved.</p>
     </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>
+
