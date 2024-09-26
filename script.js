@@ -1,6 +1,5 @@
-// script.js
 
-const holdings = ['bitcoin', 'ethereum', 'pendle', 'binancecoin', 'bittensor']; // Update 'bittensor' if necessary
+const holdings = ['bitcoin', 'ethereum', 'pendle', 'binancecoin', 'bittensor'];
 
 async function fetchHoldings() {
     const list = document.getElementById('holdings-list');
@@ -17,7 +16,7 @@ async function fetchHoldings() {
             list.appendChild(listItem);
         } catch (error) {
             console.error(`Error fetching data for ${coin}:`, error);
-            // Display a user-friendly message
+          
             const listItem = document.createElement('li');
             listItem.textContent = `Unable to fetch data for ${coin}.`;
             list.appendChild(listItem);
@@ -27,7 +26,6 @@ async function fetchHoldings() {
 
 fetchHoldings();
 
-// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
