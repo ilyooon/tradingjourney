@@ -1,46 +1,52 @@
+/* styles.css */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding-top: 70px; /* To account for fixed header */
     background-color: #f4f4f4;
     color: #333;
 }
 
-header {
+/* Override Bootstrap Navbar */
+.navbar {
     background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.nav-link {
+    color: white !important;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
+.nav-link:hover {
+    color: #ddd !important;
 }
 
 section {
     padding: 20px;
-    margin: 20px;
+    margin-bottom: 20px;
     background-color: white;
     border-radius: 8px;
 }
 
+#holdings-list li {
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+#holdings-list img {
+    width: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 footer {
-    text-align: center;
-    padding: 10px;
     background-color: #333;
     color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 10px;
 }
